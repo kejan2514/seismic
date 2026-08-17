@@ -12,6 +12,10 @@ SRC20 is Seismic's confidential token standard. Transfer and approval amounts ar
 
 Both actions are already applied by `createShieldedWalletClient` / `createShieldedPublicClient`; you can also extend a vanilla viem client with them manually.
 
+{% hint style="info" %}
+For viewing-key registration, historical log fetching, and manual decryption, see the dedicated [SRC20 Event Decryption](event-decryption.md) guide.
+{% endhint %}
+
 ## How Decryption Works
 
 1. An account registers its AES viewing key with the Directory contract.
@@ -113,6 +117,7 @@ type DecryptedApprovalLog = {
 
 ## See Also
 
+- [SRC20 Event Decryption](event-decryption.md) -- viewing keys, historical logs, and manual decryption
 - [Shielded Public Client](shielded-public-client.md) -- base client that includes `watchSRC20EventsWithKey`
 - [Shielded Wallet Client](shielded-wallet-client.md) -- base client that includes `watchSRC20Events`
 - [Encrypted Events tutorial](../../../tutorials/src20/encrypted-events.md) -- end-to-end SRC20 event walkthrough
